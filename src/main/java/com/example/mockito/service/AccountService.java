@@ -24,11 +24,11 @@ public class AccountService {
             if (Objects.isNull(login)) {
                 return "404";
             }
-            return "500";
+            return "successful";
         } catch (Exception e) {
             log.error("login error:{}", e.getMessage());
         }
-        return "error";
+        return "500";
     }
 
 

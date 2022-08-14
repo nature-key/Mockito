@@ -9,13 +9,16 @@ import org.springframework.util.StringUtils;
 public class AccountDTO {
 
     public AccountInfo login(String userName, String passWord) throws Exception {
-        if (!StringUtils.isEmpty(userName) || !StringUtils.isEmpty(passWord)) {
+        if (StringUtils.isEmpty(userName) || StringUtils.isEmpty(passWord)) {
             throw new Exception();
         }
-        return AccountInfo.builder()
-                .userName("wangXuan")
-                .passWord("jiePi")
-                .build();
+//        return AccountInfo.builder()
+//                .userName("wangXuan")
+//                .passWord("jiePi")
+//                .build();
+
+        AccountInfo accountInfo = new AccountInfo();
+        return accountInfo;
     }
 
 }
