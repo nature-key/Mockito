@@ -18,6 +18,8 @@ public class AccountDTO {
 //                .build();
 
         AccountInfo accountInfo = new AccountInfo();
+        accountInfo.setPassWord(passWord);
+        accountInfo.setUserName(userName);
         return accountInfo;
     }
 
